@@ -16,7 +16,7 @@
     <p id="solution">Antwoord verborgen!</p>
     <footer><p>Gemaakt met ❤️ door <a href="https://github.com/casperthepancake" target="_blank">Casper</a></p></footer>
     <script>
-        var types = ["amethist","basalt","biotiet","bruinkool","conglomeraat","diabase","druipsteen","gabbro","graniet","grind","kalksteen","klei","kleisteen","krijt","kwarts","kwartsiet","leisteen","marmer","obsidiaan","psammiet","puimsteen","pyriet","silt","steenkool","steenzout","veldspaat","zand","zandsteen","zwartetoermalijn"]
+        var types = ["amethist","basalt","biotiet","bruinkool","conglomeraat","diabase","druipsteen","gabbro","graniet","grind","kalksteen","klei","kleisteen","krijt","kwarts","kwartsiet","leisteen","marmer","obsidiaan","psammiet","puimsteen","pyriet","silt","steenkool","steenzout","veldspaat","zand","zandsteen","zwartetoermalijn","wille"]
         var toggle = false
         function newStone() {
             var newstone = types[Math.floor(Math.random()*types.length)];
@@ -190,6 +190,11 @@
                 if (newimg == 1) document.getElementById("image").src = "images/zwartetoermalijn1.jpg"
                 if (newimg == 2) document.getElementById("image").src = "images/zwartetoermalijn2.webp"
                 solution = "Zwarte toermalijn (Kristallijne mineralen)"
+            }
+            if (newstone == "wille") {
+                newimg = Math.ceil(Math.random()*1)
+                if (newimg == 1) document.getElementById("image").src = "images/wille.jpg"
+                solution = "Wille (Leerkracht & steenlover)"
             }
             toggle = false
             document.getElementById("toggle").innerHTML = "Toon antwoord"
