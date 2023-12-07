@@ -11,8 +11,9 @@ h1, h3, p {
 #image {
     margin: auto auto;
     display:block;
-    width:50vw;
-    height:50vh;
+    width:55%;
+    height:55%;
+    max-height:500px;
     object-fit:contain;
 }
 
