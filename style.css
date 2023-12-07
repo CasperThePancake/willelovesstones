@@ -11,8 +11,8 @@ h1, h3, p {
 #image {
     margin: auto auto;
     display:block;
-    width:500px;
-    height:500px;
+    width:50vw;
+    height:50vh;
     object-fit:contain;
 }
 
@@ -25,4 +25,8 @@ footer {
     bottom:0;
     position:absolute;
     width:100%;
+}
+
+a {
+    color:initial;
 }
