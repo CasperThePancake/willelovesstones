@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wille ❤️ stones</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.webp?v=2">
+</head>
+<body>
+    <h1>Wille ❤️ stones</h1>
+    <h3>Leer de stenen herkennen</h3>
+    <img id="image">
+    <button id="new" onclick="newStone()">Nieuwe steen</button>
+    <button id="toggle" onclick="toggleSolution()">Toon antwoord</button>
+    <p id="solution">Antwoord verborgen!</p>
+    <footer><p>Gemaakt met ❤️ door <a href="https://github.com/casperthepancake">Casper</a></p></footer>
+    <script>
+        var types = ["amethist","basalt","biotiet","bruinkool","conglomeraat","diabase","druipsteen","gabbro","graniet","grind","kalksteen","klei","kleisteen","krijt","kwarts","kwartsiet","leisteen","marmer","obsidiaan","psammiet","puimsteen","pyriet","silt","steenkool","steenzout","veldspaat","zand","zandsteen","zwartetoermalijn"]
+        var toggle = false
+        function newStone() {
+            var newstone = types[Math.floor(Math.random()*types.length)];
+            if (newstone == "amethist") {
+                newimg = Math.ceil(Math.random()*3)
+                if (newimg == 1) document.getElementById("image").src = "images/amethist1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/amethist2.jpg"
+                if (newimg == 3) document.getElementById("image").src = "images/amethist3.webp"
+                solution = "Amethist (Kristallijne mineralen)"
+            }
+            if (newstone == "basalt") {
+                newimg = Math.ceil(Math.random()*1)
+                if (newimg == 1) document.getElementById("image").src = "images/basalt1.jpg"
+                solution = "Basalt (Uitvloeiingsgesteente)"
+            }
+            if (newstone == "biotiet") {
+                newimg = Math.ceil(Math.random()*1)
+                if (newimg == 1) document.getElementById("image").src = "images/biotiet1.jpg"
+                solution = "Biotiet (Kristallijne mineralen)"
+            }
+            if (newstone == "bruinkool") {
+                newimg = Math.ceil(Math.random()*1)
+                if (newimg == 1) document.getElementById("image").src = "images/bruinkool1.jpg"
+                solution = "Bruinkool (Biogene gesteenten)"
+            }
+            if (newstone == "conglomeraat") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/conglomeraat1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/conglomeraat2.webp"
+                solution = "Conglomeraat (Vaste detritische gesteenten)"
+            }
+            if (newstone == "diabase") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/diabase1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/diabase2.jpg"
+                solution = "Diabase (Dieptegesteente)"
+            }
+            if (newstone == "druipsteen") {
+                newimg = Math.ceil(Math.random()*1)
+                if (newimg == 1) document.getElementById("image").src = "images/druipsteen1.jpg"
+                solution = "Druipsteen (Chemisch gesteente)"
+            }
+            if (newstone == "gabbro") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/gabbro1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/gabbro2.jpg"
+                solution = "Gabbro (Dieptegesteente)"
+            }
+            if (newstone == "graniet") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/graniet1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/graniet2.jpeg"
+                solution = "Graniet (Dieptegesteente)"
+            }
+            if (newstone == "grind") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/grind1.webp"
+                if (newimg == 2) document.getElementById("image").src = "images/grind2.jpg"
+                solution = "Grind (Losse detritische gesteenten)"
+            }
+            if (newstone == "kalksteen") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/kalksteen1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/kalksteen2.jpg"
+                solution = "Kalksteen (Vaste detritische gesteenten)"
+            }
+            if (newstone == "klei") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/klei1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/klei2.jpg"
+                solution = "Klei (Losse detritische gesteenten)"
+            }
+            if (newstone == "kleisteen") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/kleisteen1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/kleisteen2.webp"
+                solution = "Kleisteen (Vaste detritische gesteenten)"
+            }
+            if (newstone == "krijt") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/krijt1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/krijt2.jpg"
+                solution = "Krijt (Biogene gesteenten)"
+            }
+            if (newstone == "kwarts") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/kwarts1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/kwarts2.webp"
+                solution = "Kwarts (Kristallijne mineralen)"
+            }
+            if (newstone == "kwartsiet") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/kwartsiet1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/kwartsiet2.jpg"
+                solution = "Kwartsiet (Metamorfe gesteenten)"
+            }
+            if (newstone == "leisteen") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/leisteen1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/leisteen2.jpg"
+                solution = "Leisteen (Metamorfe gesteenten)"
+            }
+            if (newstone == "marmer") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/marmer1.webp"
+                if (newimg == 2) document.getElementById("image").src = "images/marmer2.jpg"
+                solution = "Marmer (Metamorfe gesteenten)"
+            }
+            if (newstone == "obsidiaan") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/obsidiaan1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/obsidiaan2.webp"
+                solution = "Obsidiaan (Amorfe mineralen)"
+            }
+            if (newstone == "psammiet") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/psammiet1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/psammiet2.jpg"
+                solution = "Psammiet (Vaste detritische gesteenten)"
+            }
+            if (newstone == "puimsteen") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/puimsteen1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/puimsteen2.webp"
+                solution = "Puimsteen (Uitvloeiingsgesteente)"
+            }
+            if (newstone == "pyriet") {
+                newimg = Math.ceil(Math.random()*3)
+                if (newimg == 1) document.getElementById("image").src = "images/pyriet1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/pyriet2.jpg"
+                if (newimg == 3) document.getElementById("image").src = "images/pyriet3.jpeg"
+                solution = "Pyriet (Kristallijne mineralen)"
+            }
+            if (newstone == "silt") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/silt1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/silt2.jpeg"
+                solution = "Silt (Losse detritische gesteenten)"
+            }
+            if (newstone == "steenkool") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/steenkool1.webp"
+                if (newimg == 2) document.getElementById("image").src = "images/steenkool2.jpg"
+                solution = "Steenkool (Biogene gesteenten)"
+            }
+            if (newstone == "steenzout") {
+                newimg = Math.ceil(Math.random()*1)
+                if (newimg == 1) document.getElementById("image").src = "images/steenzout1.jpg"
+                solution = "Steenzout (Chemische gesteenten)"
+            }
+            if (newstone == "veldspaat") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/veldspaat1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/veldspaat2.jpg"
+                solution = "Veldspaat (Kristallijne mineralen)"
+            }
+            if (newstone == "zand") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/zand1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/zand2.webp"
+                solution = "Zand (Losse detritische gesteenten)"
+            }
+            if (newstone == "zandsteen") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/zandsteen1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/zandsteen2.jpg"
+                solution = "Zandsteen (Vaste detritische gesteenten)"
+            }
+            if (newstone == "zwartetoermalijn") {
+                newimg = Math.ceil(Math.random()*2)
+                if (newimg == 1) document.getElementById("image").src = "images/zwartetoermalijn1.jpg"
+                if (newimg == 2) document.getElementById("image").src = "images/zwartetoermalijn2.webp"
+                solution = "Zwarte toermalijn (Kristallijne mineralen)"
+            }
+            toggle = false
+            document.getElementById("toggle").innerHTML = "Toon antwoord"
+            document.getElementById("solution").innerHTML = "Antwoord verborgen!"
+        }
+        function toggleSolution() {
+            if (toggle) {
+                toggle = false
+                document.getElementById("toggle").innerHTML = "Toon antwoord"
+                document.getElementById("solution").innerHTML = "Antwoord verborgen!"
+            } else {
+                toggle = true
+                document.getElementById("toggle").innerHTML = "Verberg antwoord"
+                document.getElementById("solution").innerHTML = solution
+            }
+        }
+        newStone()
+    </script>
+</body>
+</html>

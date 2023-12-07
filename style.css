@@ -1,0 +1,28 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height:100vh;
+    overflow:hidden;
+}
+
+h1, h3, p {
+    text-align: center;
+}
+
+#image {
+    margin: auto auto;
+    display:block;
+    width:500px;
+    height:500px;
+    object-fit:contain;
+}
+
+button {
+    margin: 15px auto;
+    display:block;
+}
+
+footer {
+    bottom:0;
+    position:absolute;
+    width:100%;
+}
