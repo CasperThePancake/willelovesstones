@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     min-height:100vh;
-    overflow:hidden;
+    overflow-x:hidden;
 }
 
 h1, h3, p {
@@ -12,7 +12,7 @@ h1, h3, p {
     margin: auto auto;
     display:block;
     width:55%;
-    height:55%;
+    height:55vh;
     max-height:500px;
     object-fit:contain;
 }
@@ -24,7 +24,6 @@ button {
 
 footer {
     bottom:0;
-    position:absolute;
     width:100%;
 }
 
