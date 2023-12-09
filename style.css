@@ -12,8 +12,9 @@ h1, h3, p {
     margin: auto auto;
     display:block;
     width:55%;
-    height:55vh;
-    max-height:500px;
+    aspect-ratio: 2/1;
+    min-height:150px;
+    max-height:400px;
     object-fit:contain;
 }
 
